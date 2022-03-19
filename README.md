@@ -1,4 +1,5 @@
-This repo includes the ansible playbooks and related shell scripts to deploy the evpn agent to the SRLINUX routers
+This repo includes the Ansible playbooks and related shell scripts 
+to deploy the evpn agent to the SRLINUX routers
 It takes the router_list.txt file as the input to get the SRLINUX router addresses
 
 **To deploy**
@@ -11,4 +12,4 @@ It takes the router_list.txt file as the input to get the SRLINUX router address
 > 		show system application static-vxlan-agent
 5. The expected output should be:
 
-![image info](./images/agent_application.png)
+![image info](./agent_application.png)
