@@ -1,1 +1,11 @@
-
+---
+- hosts: srlinux
+  tasks:
+   - name: uninstall
+     shell: sudo rpm -e static-vxlan-agent-0.1.0.x86_64
+   - name: delete the rpm file
+     file:
+      path: /tmp/static-vxlan-agent-0.1.0.x86_64.rpm
+      state: absent
+   - name: reload the appmgr
+     shell: sr_cli tools system app-management application app_mgr reload
